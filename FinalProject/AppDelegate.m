@@ -7,10 +7,14 @@
 //
 
 #import "AppDelegate.h"
-#import "ConsumerSurveyViewController.h"
+#import "AboutUsViewController.h"
 #import "ContactsViewController.h"
+#import "SettingsViewController.h"
+#import "SurveyReportsViewController.h"
 
 @implementation AppDelegate
+
+@synthesize list;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -21,6 +25,9 @@
     self.viewController.delegate = self;
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    //[self userIsLoggedIn];
+    
     return YES;
 }
 
@@ -53,9 +60,15 @@
 
 - (void) userIsLoggedIn
 {
+    coreData = [[CoreData alloc] init];
     [self createTabs];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+}
+
+- (void) changeToListPDFs
+{
+    self.tabBarController.selectedViewController = list;
 }
 
 - (void) createTabs
@@ -64,12 +77,12 @@
     NSString *tabText;
     NSMutableArray *arrayOfTempViewControllers = [[NSMutableArray alloc] init];
     
-    for(int i = 0; i <= 2; i++)
+    for(int i = 0; i <= 5; i++)
     {
         switch (i)
         {
             case 0:
-                temp = [[ConsumerSurveyViewController alloc] init];
+                temp = [[ConsumerSurveyViewController alloc] initWithCoreData:coreData];
                 tabText = [[NSString alloc] initWithString:@"Consumer Survey"];
                 break;
                 
@@ -79,16 +92,43 @@
                 break;
                 
             case 2:
-                temp = [[ConsumerSurveyViewController alloc] init];
-                tabText = [[NSString alloc] initWithString:@"Consumer Survey"];
+                temp = [[SurveyReportsViewController alloc] initWithCoreData:coreData];
+                tabText = [[NSString alloc] initWithString:@"Survey Reports"];
+                break;
+                
+            case 3:
+                temp = [[ListPDFsViewController alloc] initWithCoreData:coreData];
+                list.view = temp.view;
+                tabText = [[NSString alloc] initWithString:@"List of PDF"];
+                break;
+                
+            case 4:
+                temp = [[AboutUsViewController alloc] init];
+                list.view = temp.view;
+                tabText = [[NSString alloc] initWithString:@"About Us"];
+                break;
+                
+            case 5:
+                temp = [[SettingsViewController alloc] init];
+                list.view = temp.view;
+                tabText = [[NSString alloc] initWithString:@"Settings"];
                 break;
                 
             default:
                 break;
         }
         
-        temp.tabBarItem.title = tabText;
-        [arrayOfTempViewControllers addObject:temp];
+        if(i == 1 || i == 2)
+        {
+            UINavigationController *navigator = [[UINavigationController alloc] initWithRootViewController:temp];
+            navigator.tabBarItem.title = tabText;
+            [arrayOfTempViewControllers addObject:navigator];
+        }
+        else
+        {
+            temp.tabBarItem.title = tabText;
+            [arrayOfTempViewControllers addObject:temp];
+        }
     
         if(temp != nil)
         {
@@ -106,7 +146,7 @@
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = arrayOfTempViewControllers;
     
-    //self.tabController.selectedIndex = 22;
+    //self.tabBarController.selectedIndex = 22;
     
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];

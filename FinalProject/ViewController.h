@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SettingsViewController.h"
 
 @protocol ViewControllerDelegate <NSObject>
 
@@ -32,6 +33,10 @@
     //Data
     NSString *plistPath;
     NSMutableDictionary *dict;
+    
+    //AutoLogin
+    NSUserDefaults *user;
+    BOOL remember_login;
 }
 
 @property (assign, nonatomic) id<ViewControllerDelegate> delegate;

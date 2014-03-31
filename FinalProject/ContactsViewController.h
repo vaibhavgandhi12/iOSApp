@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contact.h"
+#import "DetailedContactsViewController.h"
+#import "XMLParser.h"
 
-@interface ContactsViewController : UIViewController
+@interface ContactsViewController : UIViewController <XMLParserDelegate, UITableViewDataSource, UITableViewDelegate>
+{
+    NSMutableArray *dataArray;
+    XMLParser *parser;
+    UITableView *dataTable;
+}
 
 @end

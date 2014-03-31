@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E04F1841887F60400CBAA4C /* SurveyDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F1821887F60400CBAA4C /* SurveyDB.xcdatamodeld */; };
+		1E04F1871887F76600CBAA4C /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F1861887F76600CBAA4C /* Entity.m */; };
+		1E04F1891887F91800CBAA4C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E04F1881887F91800CBAA4C /* CoreData.framework */; };
+		1E04F18C1888DCEA00CBAA4C /* Entity1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F18B1888DCEA00CBAA4C /* Entity1.m */; };
+		1E04F18F1888E08D00CBAA4C /* DetailedSurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F18E1888E08D00CBAA4C /* DetailedSurveyViewController.m */; };
+		1E04F1911888EDB200CBAA4C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E04F1901888EDB200CBAA4C /* CoreText.framework */; };
+		1E04F1931888EDBC00CBAA4C /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E04F1921888EDBC00CBAA4C /* QuickLook.framework */; };
+		1E04F1971888F31400CBAA4C /* ListPDFsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F1961888F31400CBAA4C /* ListPDFsViewController.m */; };
+		1E04F19C1888F64900CBAA4C /* CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F19B1888F64900CBAA4C /* CoreData.m */; };
+		1E04F19F188903AD00CBAA4C /* PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F19E188903AD00CBAA4C /* PDF.m */; };
+		1E04F1A21889120D00CBAA4C /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F1A11889120D00CBAA4C /* XMLParser.m */; };
+		1E04F1A51889124800CBAA4C /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F1A41889124800CBAA4C /* Contact.m */; };
+		1E04F1A81889175300CBAA4C /* DetailedContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F1A71889175300CBAA4C /* DetailedContactsViewController.m */; };
+		1E04F1AA188923A600CBAA4C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E04F1A9188923A600CBAA4C /* AddressBookUI.framework */; };
+		1E04F1AE1889268900CBAA4C /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F1AD1889268900CBAA4C /* AboutUsViewController.m */; };
+		1E04F1B018892A4A00CBAA4C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E04F1AF18892A4A00CBAA4C /* Social.framework */; };
+		1E04F1B218892A4F00CBAA4C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E04F1B118892A4F00CBAA4C /* MessageUI.framework */; };
+		1E04F1B418892BC100CBAA4C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1E04F1B318892BC100CBAA4C /* Settings.bundle */; };
+		1E04F1B718892CBE00CBAA4C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E04F1B618892CBE00CBAA4C /* SettingsViewController.m */; };
 		1E51530918878FDF00977F82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E51530818878FDF00977F82 /* Foundation.framework */; };
 		1E51530B18878FDF00977F82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E51530A18878FDF00977F82 /* CoreGraphics.framework */; };
 		1E51530D18878FDF00977F82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E51530C18878FDF00977F82 /* UIKit.framework */; };
@@ -26,6 +45,8 @@
 		1E5153471887AC8B00977F82 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5153461887AC8B00977F82 /* ContactsViewController.m */; };
 		1E5153491887B3ED00977F82 /* Database.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E5153481887B3ED00977F82 /* Database.plist */; };
 		1E51534C1887C75000977F82 /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E51534B1887C75000977F82 /* CustomScrollView.m */; };
+		1E5153501887E38100977F82 /* SurveyReportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E51534F1887E38100977F82 /* SurveyReportsViewController.m */; };
+		1E5153521887F0DD00977F82 /* survey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E5153511887F0DD00977F82 /* survey.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +60,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E04F1831887F60400CBAA4C /* SurveyDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SurveyDB.xcdatamodel; sourceTree = "<group>"; };
+		1E04F1851887F76600CBAA4C /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		1E04F1861887F76600CBAA4C /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		1E04F1881887F91800CBAA4C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1E04F18A1888DCEA00CBAA4C /* Entity1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity1.h; sourceTree = "<group>"; };
+		1E04F18B1888DCEA00CBAA4C /* Entity1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity1.m; sourceTree = "<group>"; };
+		1E04F18D1888E08D00CBAA4C /* DetailedSurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedSurveyViewController.h; sourceTree = "<group>"; };
+		1E04F18E1888E08D00CBAA4C /* DetailedSurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedSurveyViewController.m; sourceTree = "<group>"; };
+		1E04F1901888EDB200CBAA4C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1E04F1921888EDBC00CBAA4C /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		1E04F1951888F31400CBAA4C /* ListPDFsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPDFsViewController.h; sourceTree = "<group>"; };
+		1E04F1961888F31400CBAA4C /* ListPDFsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPDFsViewController.m; sourceTree = "<group>"; };
+		1E04F19A1888F64900CBAA4C /* CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreData.h; sourceTree = "<group>"; };
+		1E04F19B1888F64900CBAA4C /* CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreData.m; sourceTree = "<group>"; };
+		1E04F19D188903AD00CBAA4C /* PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDF.h; sourceTree = "<group>"; };
+		1E04F19E188903AD00CBAA4C /* PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDF.m; sourceTree = "<group>"; };
+		1E04F1A01889120D00CBAA4C /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		1E04F1A11889120D00CBAA4C /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		1E04F1A31889124800CBAA4C /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		1E04F1A41889124800CBAA4C /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		1E04F1A61889175300CBAA4C /* DetailedContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedContactsViewController.h; sourceTree = "<group>"; };
+		1E04F1A71889175300CBAA4C /* DetailedContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedContactsViewController.m; sourceTree = "<group>"; };
+		1E04F1A9188923A600CBAA4C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		1E04F1AC1889268900CBAA4C /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		1E04F1AD1889268900CBAA4C /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		1E04F1AF18892A4A00CBAA4C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1E04F1B118892A4F00CBAA4C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1E04F1B318892BC100CBAA4C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1E04F1B518892CBE00CBAA4C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		1E04F1B618892CBE00CBAA4C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		1E51530518878FDF00977F82 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E51530818878FDF00977F82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E51530A18878FDF00977F82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +103,7 @@
 		1E51531B18878FDF00977F82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E51531D18878FDF00977F82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1E51531E18878FDF00977F82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1E51532018878FDF00977F82 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1E51532018878FDF00977F82 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FinalProject/Images.xcassets; sourceTree = "<group>"; };
 		1E51532618878FE000977F82 /* FinalProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E51532718878FE000977F82 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1E51532F18878FE000977F82 /* FinalProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FinalProjectTests-Info.plist"; sourceTree = "<group>"; };
@@ -66,6 +117,9 @@
 		1E5153481887B3ED00977F82 /* Database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Database.plist; sourceTree = "<group>"; };
 		1E51534A1887C75000977F82 /* CustomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomScrollView.h; sourceTree = "<group>"; };
 		1E51534B1887C75000977F82 /* CustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScrollView.m; sourceTree = "<group>"; };
+		1E51534E1887E38100977F82 /* SurveyReportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyReportsViewController.h; sourceTree = "<group>"; };
+		1E51534F1887E38100977F82 /* SurveyReportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyReportsViewController.m; sourceTree = "<group>"; };
+		1E5153511887F0DD00977F82 /* survey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = survey.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +127,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E04F1B218892A4F00CBAA4C /* MessageUI.framework in Frameworks */,
+				1E04F1B018892A4A00CBAA4C /* Social.framework in Frameworks */,
+				1E04F1AA188923A600CBAA4C /* AddressBookUI.framework in Frameworks */,
+				1E04F1931888EDBC00CBAA4C /* QuickLook.framework in Frameworks */,
+				1E04F1911888EDB200CBAA4C /* CoreText.framework in Frameworks */,
+				1E04F1891887F91800CBAA4C /* CoreData.framework in Frameworks */,
 				1E51530B18878FDF00977F82 /* CoreGraphics.framework in Frameworks */,
 				1E51530D18878FDF00977F82 /* UIKit.framework in Frameworks */,
 				1E51530918878FDF00977F82 /* Foundation.framework in Frameworks */,
@@ -92,10 +152,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E04F1941888F2FB00CBAA4C /* List of PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				1E04F1951888F31400CBAA4C /* ListPDFsViewController.h */,
+				1E04F1961888F31400CBAA4C /* ListPDFsViewController.m */,
+			);
+			name = "List of PDFs";
+			sourceTree = "<group>";
+		};
+		1E04F1991888F5B700CBAA4C /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				1E04F19A1888F64900CBAA4C /* CoreData.h */,
+				1E04F19B1888F64900CBAA4C /* CoreData.m */,
+				1E04F1851887F76600CBAA4C /* Entity.h */,
+				1E04F1861887F76600CBAA4C /* Entity.m */,
+				1E04F19D188903AD00CBAA4C /* PDF.h */,
+				1E04F19E188903AD00CBAA4C /* PDF.m */,
+				1E04F1821887F60400CBAA4C /* SurveyDB.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		1E04F1AB1889267A00CBAA4C /* About Us */ = {
+			isa = PBXGroup;
+			children = (
+				1E04F1AC1889268900CBAA4C /* AboutUsViewController.h */,
+				1E04F1AD1889268900CBAA4C /* AboutUsViewController.m */,
+			);
+			name = "About Us";
+			sourceTree = "<group>";
+		};
+		1E04F1B818892CCA00CBAA4C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1E04F1B318892BC100CBAA4C /* Settings.bundle */,
+				1E04F1B518892CBE00CBAA4C /* SettingsViewController.h */,
+				1E04F1B618892CBE00CBAA4C /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		1E5152FC18878FDF00977F82 = {
 			isa = PBXGroup;
 			children = (
 				1E51530E18878FDF00977F82 /* FinalProject */,
+				1E51532018878FDF00977F82 /* Images.xcassets */,
+				1E51530F18878FDF00977F82 /* Supporting Files */,
 				1E51532D18878FE000977F82 /* FinalProjectTests */,
 				1E51530718878FDF00977F82 /* Frameworks */,
 				1E51530618878FDF00977F82 /* Products */,
@@ -114,6 +218,12 @@
 		1E51530718878FDF00977F82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1E04F1B118892A4F00CBAA4C /* MessageUI.framework */,
+				1E04F1AF18892A4A00CBAA4C /* Social.framework */,
+				1E04F1A9188923A600CBAA4C /* AddressBookUI.framework */,
+				1E04F1921888EDBC00CBAA4C /* QuickLook.framework */,
+				1E04F1901888EDB200CBAA4C /* CoreText.framework */,
+				1E04F1881887F91800CBAA4C /* CoreData.framework */,
 				1E51530818878FDF00977F82 /* Foundation.framework */,
 				1E51530A18878FDF00977F82 /* CoreGraphics.framework */,
 				1E51530C18878FDF00977F82 /* UIKit.framework */,
@@ -125,17 +235,21 @@
 		1E51530E18878FDF00977F82 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				1E04F1AB1889267A00CBAA4C /* About Us */,
 				1E51531718878FDF00977F82 /* AppDelegate.h */,
 				1E51531818878FDF00977F82 /* AppDelegate.m */,
 				1E5153401887ABF900977F82 /* Consumer Survey */,
 				1E5153441887AC4E00977F82 /* Contacts */,
+				1E04F1991888F5B700CBAA4C /* Core Data */,
+				1E5153481887B3ED00977F82 /* Database.plist */,
 				1E51533D18879A0C00977F82 /* Images */,
-				1E51532018878FDF00977F82 /* Images.xcassets */,
+				1E04F1941888F2FB00CBAA4C /* List of PDFs */,
 				1E51531A18878FDF00977F82 /* Main.storyboard */,
-				1E51530F18878FDF00977F82 /* Supporting Files */,
+				1E04F1B818892CCA00CBAA4C /* Settings */,
+				1E51534D1887E36700977F82 /* Survey Reports */,
+				1E5153511887F0DD00977F82 /* survey.plist */,
 				1E51531D18878FDF00977F82 /* ViewController.h */,
 				1E51531E18878FDF00977F82 /* ViewController.m */,
-				1E5153481887B3ED00977F82 /* Database.plist */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -149,6 +263,7 @@
 				1E51531618878FDF00977F82 /* FinalProject-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = FinalProject;
 			sourceTree = "<group>";
 		};
 		1E51532D18878FE000977F82 /* FinalProjectTests */ = {
@@ -180,10 +295,10 @@
 		1E5153401887ABF900977F82 /* Consumer Survey */ = {
 			isa = PBXGroup;
 			children = (
-				1E51534A1887C75000977F82 /* CustomScrollView.h */,
-				1E51534B1887C75000977F82 /* CustomScrollView.m */,
 				1E5153411887AC1200977F82 /* ConsumerSurveyViewController.h */,
 				1E5153421887AC1200977F82 /* ConsumerSurveyViewController.m */,
+				1E51534A1887C75000977F82 /* CustomScrollView.h */,
+				1E51534B1887C75000977F82 /* CustomScrollView.m */,
 			);
 			name = "Consumer Survey";
 			sourceTree = "<group>";
@@ -191,10 +306,29 @@
 		1E5153441887AC4E00977F82 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				1E04F1A31889124800CBAA4C /* Contact.h */,
+				1E04F1A41889124800CBAA4C /* Contact.m */,
 				1E5153451887AC8B00977F82 /* ContactsViewController.h */,
 				1E5153461887AC8B00977F82 /* ContactsViewController.m */,
+				1E04F1A61889175300CBAA4C /* DetailedContactsViewController.h */,
+				1E04F1A71889175300CBAA4C /* DetailedContactsViewController.m */,
+				1E04F1A01889120D00CBAA4C /* XMLParser.h */,
+				1E04F1A11889120D00CBAA4C /* XMLParser.m */,
 			);
 			name = Contacts;
+			sourceTree = "<group>";
+		};
+		1E51534D1887E36700977F82 /* Survey Reports */ = {
+			isa = PBXGroup;
+			children = (
+				1E04F18D1888E08D00CBAA4C /* DetailedSurveyViewController.h */,
+				1E04F18E1888E08D00CBAA4C /* DetailedSurveyViewController.m */,
+				1E04F18A1888DCEA00CBAA4C /* Entity1.h */,
+				1E04F18B1888DCEA00CBAA4C /* Entity1.m */,
+				1E51534E1887E38100977F82 /* SurveyReportsViewController.h */,
+				1E51534F1887E38100977F82 /* SurveyReportsViewController.m */,
+			);
+			name = "Survey Reports";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +375,7 @@
 		1E5152FD18878FDF00977F82 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Vaibhav Gandhi";
 				TargetAttributes = {
 					1E51532518878FE000977F82 = {
@@ -273,11 +407,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5153521887F0DD00977F82 /* survey.plist in Resources */,
 				1E51532118878FDF00977F82 /* Images.xcassets in Resources */,
 				1E51531318878FDF00977F82 /* InfoPlist.strings in Resources */,
 				1E51531C18878FDF00977F82 /* Main.storyboard in Resources */,
 				1E5153491887B3ED00977F82 /* Database.plist in Resources */,
 				1E51533F18879A1C00977F82 /* logo.png in Resources */,
+				1E04F1B418892BC100CBAA4C /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,10 +432,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E04F1A51889124800CBAA4C /* Contact.m in Sources */,
+				1E04F18F1888E08D00CBAA4C /* DetailedSurveyViewController.m in Sources */,
 				1E51531F18878FDF00977F82 /* ViewController.m in Sources */,
+				1E04F19C1888F64900CBAA4C /* CoreData.m in Sources */,
+				1E04F1841887F60400CBAA4C /* SurveyDB.xcdatamodeld in Sources */,
+				1E04F1A21889120D00CBAA4C /* XMLParser.m in Sources */,
+				1E04F1971888F31400CBAA4C /* ListPDFsViewController.m in Sources */,
+				1E04F18C1888DCEA00CBAA4C /* Entity1.m in Sources */,
+				1E04F1AE1889268900CBAA4C /* AboutUsViewController.m in Sources */,
 				1E51531918878FDF00977F82 /* AppDelegate.m in Sources */,
+				1E04F1A81889175300CBAA4C /* DetailedContactsViewController.m in Sources */,
+				1E04F1B718892CBE00CBAA4C /* SettingsViewController.m in Sources */,
+				1E5153501887E38100977F82 /* SurveyReportsViewController.m in Sources */,
+				1E04F19F188903AD00CBAA4C /* PDF.m in Sources */,
 				1E51534C1887C75000977F82 /* CustomScrollView.m in Sources */,
 				1E5153471887AC8B00977F82 /* ContactsViewController.m in Sources */,
+				1E04F1871887F76600CBAA4C /* Entity.m in Sources */,
 				1E5153431887AC1200977F82 /* ConsumerSurveyViewController.m in Sources */,
 				1E51531518878FDF00977F82 /* main.m in Sources */,
 			);
@@ -355,7 +504,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -394,7 +542,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -454,7 +601,6 @@
 		1E51533B18878FE000977F82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FinalProject.app/FinalProject";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -477,7 +623,6 @@
 		1E51533C18878FE000977F82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FinalProject.app/FinalProject";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -512,6 +657,7 @@
 				1E51533918878FE000977F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E51533A18878FE000977F82 /* Build configuration list for PBXNativeTarget "FinalProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -520,8 +666,22 @@
 				1E51533C18878FE000977F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1E04F1821887F60400CBAA4C /* SurveyDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1E04F1831887F60400CBAA4C /* SurveyDB.xcdatamodel */,
+			);
+			currentVersion = 1E04F1831887F60400CBAA4C /* SurveyDB.xcdatamodel */;
+			path = SurveyDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1E5152FD18878FDF00977F82 /* Project object */;
 }

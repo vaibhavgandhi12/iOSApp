@@ -67,6 +67,23 @@
     password.hidden = YES;
     [self.view addSubview:password];
     
+    user = [NSUserDefaults standardUserDefaults];
+    remember_login = [user boolForKey:@"remember_login"];
+    bool user1 = false, pass1 = false;
+    if (remember_login) {
+        if ([user stringForKey:@"username"]) {
+            username.text = [user stringForKey:@"username"];
+            user1 = true;
+        }
+        if ([user stringForKey:@"password"]) {
+            password.text = [user stringForKey:@"password"];
+            pass1 = true;
+        }
+        if (user1 && pass1) {
+            [self submitClicked];
+        }
+    }
+    
     submit = [UIButton buttonWithType:UIButtonTypeSystem];
     submit.frame = CGRectMake(100.0, 330.0, 120.0, 30.0);
     [submit setTitle:@"Submit" forState:UIControlStateNormal];
@@ -76,30 +93,21 @@
     [self.view addSubview:submit];
     
     counter = 0;
-    timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(animate) userInfo:Nil repeats:YES];
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(animate) userInfo:Nil repeats:YES];
 }
 
 - (void) animate
 {
-    if (counter == 5) {
-        spinner.hidden = NO;
-        [spinner startAnimating];
+    counter++;
+    if (counter < 65) {
+        if (counter == 5) {
+            spinner.hidden = NO;
+            [spinner startAnimating];
+        }
+        logo.frame = CGRectMake(110.0, 175 - counter, 100.0, 130.0);
     }
     
-    if (counter == 10) {
-        logo.frame = CGRectMake(110.0, 160.0, 100.0, 130.0);
-    }
-    
-    if (counter == 20) {
-        logo.frame = CGRectMake(110.0, 135.0, 100.0, 130.0);
-    }
-    
-    if (counter == 30) {
-        logo.frame = CGRectMake(110.0, 120.0, 100.0, 130.0);
-    }
-    
-    if(counter == 40)
-    {
+    else {
         [spinner stopAnimating];
         spinner.hidden = YES;
         logo.frame = CGRectMake(110.0, 110.0, 100.0, 130.0);
@@ -109,12 +117,9 @@
         password.hidden = NO;
         submit.hidden = NO;
     }
-    
-    counter++;
 }
 
 #pragma mark - textField delegate
-
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     // keyboard is visible, move views
@@ -180,6 +185,8 @@
         NSArray *usernameCheck = [dict objectForKey:username.text];
         if (usernameCheck != nil) {
             if ([password.text isEqualToString:[usernameCheck objectAtIndex:1]]) {
+                [user setObject:username.text forKey:@"username"];
+                [user setObject:password.text forKey:@"password"];
                 [delegate userIsLoggedIn];
             }
             else {
